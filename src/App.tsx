@@ -1,18 +1,40 @@
-import About from "./components/About/About";
-import Contact from "./components/contact/Contact";
-import Experience from "./components/Experience/Experience";
+import { lazy, Suspense } from "react";
 import Navbar from "./components/Navbar/Navbar";
-import Projects from "./components/Projects/Projects";
 import "./index.css";
+
+const About = lazy(() => import("./components/About/About"));
+const Projects = lazy(() => import("./components/Projects/Projects"));
+const Experience = lazy(() => import("./components/Experience/Experience"));
+const Contact = lazy(() => import("./components/contact/Contact"));
 
 export default function App() {
   return (
     <div>
       <Navbar />
-      <About />
-      <Projects />
-      <Experience />
-      <Contact />
+
+      <Suspense
+        fallback={<div className="section-loading">Loading About...</div>}
+      >
+        <About />
+      </Suspense>
+
+      <Suspense
+        fallback={<div className="section-loading">Loading Projects...</div>}
+      >
+        <Projects />
+      </Suspense>
+
+      <Suspense
+        fallback={<div className="section-loading">Loading Experience...</div>}
+      >
+        <Experience />
+      </Suspense>
+
+      <Suspense
+        fallback={<div className="section-loading">Loading Contact...</div>}
+      >
+        <Contact />
+      </Suspense>
     </div>
   );
 }
