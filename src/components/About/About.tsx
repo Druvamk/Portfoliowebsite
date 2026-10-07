@@ -5,6 +5,7 @@ export default function About() {
   return (
     <section id="about" className="about-section">
       <div className="animated-bg"></div>
+
       <div className="about-container">
         <div className="about-image">
           <div className="image-wrapper">
@@ -14,27 +15,45 @@ export default function About() {
         </div>
 
         <div className="about-text">
-          <span className="badge">Frontend Developer</span>
+          <span className="badge">Software Engineer | React.js Developer</span>
+
           <h2>About Me</h2>
+
           <p>
-            Hi, I'm <span className="highlight">Druva MK</span> — a passionate
-            Front-End Developer with experience in building responsive and
-            interactive web applications using <strong>React.js</strong>,
-            <strong> TypeScript</strong>, and <strong>JavaScript (ES6+)</strong>
-            . I love crafting clean, reusable UI components and exploring
-            performance optimization techniques.
+            Hi, I'm <span className="highlight">Druva MK</span> — a Software
+            Engineer and Front-End Developer with around{" "}
+            <strong>2 years of experience</strong> building responsive,
+            scalable, and user-friendly web applications using{" "}
+            <strong>React.js</strong>, <strong>Next.js</strong>,{" "}
+            <strong>TypeScript</strong>, and <strong>JavaScript</strong>.
           </p>
 
           <p>
-            Currently, I'm focused on improving user experiences and learning
-            advanced React patterns to build scalable front-end architectures.
+            Currently, I work at <strong>Indo-Sakura</strong>, where I
+            contribute to enterprise applications including the{" "}
+            <strong>JWWA (Japan Water Works Association)</strong> project and
+            the <strong>Zonexa Admin Panel</strong>. My work includes REST API
+            integration, authentication flows, reusable UI components, dashboard
+            development, file downloads, frontend event logging, responsive UI
+            development, and bug fixing.
+          </p>
+
+          <p>
+            I enjoy building clean and maintainable frontend architectures,
+            improving user experiences, writing reusable components, and
+            collaborating with backend and QA teams to deliver reliable
+            applications.
           </p>
 
           <div className="skills">
             <h3>Tech Stack</h3>
+
             <ul>
               <li>
                 <span className="skill-icon">⚛️</span> React.js
+              </li>
+              <li>
+                <span className="skill-icon">▲</span> Next.js
               </li>
               <li>
                 <span className="skill-icon">📘</span> TypeScript
@@ -43,16 +62,23 @@ export default function About() {
                 <span className="skill-icon">⚡</span> JavaScript (ES6+)
               </li>
               <li>
-                <span className="skill-icon">🔄</span> Redux
+                <span className="skill-icon">🔄</span> Redux Toolkit & RTK Query
               </li>
               <li>
-                <span className="skill-icon">▲</span> Next.js
+                <span className="skill-icon">🎨</span> Tailwind CSS
               </li>
               <li>
-                <span className="skill-icon">🎨</span> HTML / CSS
+                <span className="skill-icon">🧩</span> shadcn/ui
               </li>
               <li>
-                <span className="skill-icon">🔧</span> Git & Github
+                <span className="skill-icon">🔗</span> REST API Integration
+              </li>
+              <li>
+                <span className="skill-icon">🧪</span> Jest & React Testing
+                Library
+              </li>
+              <li>
+                <span className="skill-icon">🔧</span> Git & GitHub
               </li>
             </ul>
           </div>
